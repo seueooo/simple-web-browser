@@ -21,7 +21,10 @@ def parse_url(url):
     # Extract port from host if present
     if ":" in host_port:
         host, port_str = host_port.rsplit(":", 1)
-        port = int(port_str)
+        try:
+            port = int(port_str)
+        except ValueError:
+            raise ValueError(f"Invalid port in URL: {port_str!r}")
     else:
         host = host_port
         port = 443 if scheme == "https" else 80
