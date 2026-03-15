@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/bduesige/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.2/skills/subagent-driven-development/**)",
+      "Bash(python -m pytest tests/test_browser.py -v)",
+      "Bash(python3 -m pytest tests/test_browser.py -v)",
+      "Bash(/opt/homebrew/bin/pytest tests/test_browser.py -v)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(python3 -m pytest /Users/bduesige/Desktop/test/tests/test_browser.py -v)"
+    ],
+    "additionalDirectories": [
+      "/Users/bduesige/Desktop/test/docs/superpowers"
+    ]
+  }
+}
